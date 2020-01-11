@@ -11,6 +11,12 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
+Next, install the following binary as it associated with the FZF plugin:
+
+1. https://github.com/sharkdp/fd
+2. https://github.com/BurntSushi/ripgrep
+3. https://github.com/ggreer/the_silver_searcher
+
 ## Installation
 
 1. Place `.vimrc` at the home directory.
