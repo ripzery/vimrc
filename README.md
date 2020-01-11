@@ -37,3 +37,10 @@ Next, install the following binary as it associated with the FZF plugin:
 2. File Explorer
 3. Folding
 4. Prefer spaces over tabs
+
+## Shortcuts
+
+1. `CTRL+C` to toggle NerdTree explorer
+2. `CTRL+F` to search all files in the workspace
+3. `CTRL+A` to search content for all files in the workspace
+4. `CTRL+H` to search in the history
