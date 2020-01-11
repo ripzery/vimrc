@@ -2,6 +2,15 @@
 
 My vim configuration
 
+## Prerequisite
+
+If you didn't have `vim-plug` installed, you will have to install it first by running the following command:
+
+```
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
 ## Installation
 
 1. Place `.vimrc` at the home directory.
