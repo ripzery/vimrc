@@ -7,21 +7,44 @@ set relativenumber
 call plug#begin('~/.vim/plugged')
 
 Plug 'sheerun/vim-polyglot'
-Plug '~/.fzf'
 Plug 'scrooloose/nerdtree'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'wakatime/vim-wakatime'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'branch': 'release/1.x',
+  \ 'for': [
+    \ 'javascript',
+    \ 'css',
+    \ 'less',
+    \ 'json',
+    \ 'graphql',
+    \ 'markdown',
+    \ 'vue',
+    \ 'python',
+    \ 'ruby',
+    \ 'html',
+    \ 'swift' ] }
 
 call plug#end()
 
-filetype plugin indent on
+set expandtab
+set shiftwidth=2
+set tabstop=2
+set omnifunc=syntaxcomplete#Complete
+set foldmethod=syntax
+set foldcolumn=1
+let javascript_fold=1
+set foldlevelstart=99
+filetype plugin on
 syntax on
 
-" Turn on NERDTree everytime
-autocmd vimenter * NERDTree
 
-" Map CTRL+N to toggle nerd tree
-map <C-n> :NERDTreeToggle<CR>
-map <C-E> :Sex<CR>
+map <C-C> :NERDTreeToggle<CR>
+map <C-F> :Files<CR>
+map <C-A> :Ag<CR>
+map <C-H> :History<CR>
+" :set shiftwidth=2
 
-:set shiftwidth=2
-
-let $FZF_DEFAULT_COMMAND = '(git ls-tree -r --name-only HEAD || find . -path "*/\.*" -prune -o -type f -print -o -type l -print | sed s/^..//) 2> /dev/null'
+let $FZF_DEFAULT_COMMAND ='fd --type f --hidden --follow --exclude .git' 
