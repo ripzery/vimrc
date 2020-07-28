@@ -16,15 +16,9 @@ Plug 'prettier/vim-prettier', {
   \ 'for': [
     \ 'javascript',
     \ 'css',
-    \ 'less',
     \ 'json',
-    \ 'graphql',
     \ 'markdown',
-    \ 'vue',
-    \ 'python',
-    \ 'ruby',
-    \ 'html',
-    \ 'swift' ] }
+    \ 'html'] }
 
 call plug#end()
 
