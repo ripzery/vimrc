@@ -30,6 +30,7 @@ set foldmethod=syntax
 set foldcolumn=1
 let javascript_fold=1
 set foldlevelstart=99
+set hlsearch
 filetype plugin on
 syntax on
 
