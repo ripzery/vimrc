@@ -34,11 +34,8 @@ set hlsearch
 " Ignore case of searches
 set ignorecase
 " Centralize backups, swapfiles and undo history
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
 filetype plugin on
 syntax on
-
 
 map <C-C> :NERDTreeToggle<CR>
 map <C-F> :Files<CR>
