@@ -31,6 +31,11 @@ set foldcolumn=1
 let javascript_fold=1
 set foldlevelstart=99
 set hlsearch
+" Ignore case of searches
+set ignorecase
+" Centralize backups, swapfiles and undo history
+set backupdir=~/.vim/backups
+set directory=~/.vim/swaps
 filetype plugin on
 syntax on
 
